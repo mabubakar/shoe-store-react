@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Git
+
+You are getting this error because "origin" is not available. "origin" is a convention not part of the command. "origin" is the local name of the remote repository.
+
+git remote add myorigin git@github.com:myname/oldrep.git
+
 ## Available Scripts
 
 In the project directory, you can run:

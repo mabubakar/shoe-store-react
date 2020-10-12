@@ -12,6 +12,7 @@ const App = () => {
   return (
     <>
       <h1>Abubakar</h1>
+      <h1>Muhammad</h1>
     </>
   )
 }

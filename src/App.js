@@ -11,7 +11,7 @@ import SingleProduct from './pages/SingleProductPage'
 const App = () => {
   return (
     <>
-      <h1>abubakar</h1>
+      <h1>Abubakar</h1>
     </>
   )
 }

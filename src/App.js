@@ -10,18 +10,27 @@ import SingleProduct from './pages/SingleProductPage'
 
 import { Switch, Route } from 'react-router-dom'
 
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Sidebar from './components/Sidebar'
+import SideCart from './components/SideCart'
+
 const App = () => {
   return (
     <>
+      <Navbar />
+      <Sidebar />
+      <SideCart />
       <Switch>
-        <Route exact path='/' components={Home} />
-        <Route path='/about' components={About} />
-        <Route path='/contact' components={Contact} />
-        <Route path='/cart' components={Cart} />
-        <Route path='/products' components={Products} />
-        <Route exact path='/products:id' components={SingleProduct} />
-        <Route components={Default} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/cart' component={Cart} />
+        <Route path='/products' component={Products} />
+        <Route exact path='/products:id' component={SingleProduct} />
+        <Route component={Default} />
       </Switch>
+      <Footer />
     </>
   )
 }

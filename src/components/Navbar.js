@@ -17,7 +17,7 @@ const Navbar = () => {
                 <img src={logo} alt='tech store logo' />
                 <div className='nav-cart'>
                   <FaCartPlus className='nav-icon' onClick={handleCart} />
-                  <div className='cart-item'>{cartItems}</div>
+                  <div className='cart-items'>{cartItems}</div>
                 </div>
               </div>
             </NavWrapper>
@@ -40,6 +40,16 @@ const NavWrapper = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .nav-cart {
+  }
+  .cart-items {
   }
 `
 

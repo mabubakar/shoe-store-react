@@ -28,6 +28,19 @@ const Navbar = () => {
   )
 }
 
-const NavWrapper = styled.nav``
+const NavWrapper = styled.nav`
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  background: var(--mainGrey);
+  border-bottom: 3px solid var(--primaryColor);
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+`
 
 export default Navbar

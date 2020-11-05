@@ -42,6 +42,7 @@ const ItemPage = () => {
 
   useEffect(() => {
     getShoeItem(id)
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   const addItemToStore = id => {
